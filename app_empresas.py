@@ -130,17 +130,6 @@ st.title('Brazilian Companies')
 # url_tdc='https://thedevconf.com/img/logos/logo-tdc-horizontal-navbar-inverse.png'
 # st.sidebar.image(url_tdc)
 
-ingrid_photo = 'https://media-exp1.licdn.com/dms/image/C4D03AQH_InG-xiedOA/profile-displayphoto-shrink_800_800/0/1615148707112?e=1642636800&v=beta&t=KVBHsx89CGR_PJGGob87UdRSJD9hsJQbtulcajoIGeg'
-_,col1,col2, _ = st.sidebar.columns(4)
-col1.image(ingrid_photo)
-url='https://www.linkedin.com/in/ingrid-knochenhauer/'
-col1.markdown("[Ingrid](url)")
-
-nickolas_photo = 'https://media-exp1.licdn.com/dms/image/C4E03AQEUkRjeGzF2NA/profile-displayphoto-shrink_400_400/0/1537832523370?e=1642636800&v=beta&t=MbtUAuZtNLDPIVSKrVJ_2MzCq9aAfN56-9pChivl7Uw'
-col2.image(nickolas_photo)
-url='https://www.linkedin.com/in/nickolas-s-mendes/'
-col2.markdown("[Nickolas](url)")
-
 st.sidebar.subheader('audio, acoustics, sound and vibration')
 
 #FILTERS
@@ -158,6 +147,17 @@ df_filtered, cnae_code, cnae_message = activity_filter(activity_desc, cnaes, df_
 
 #filtering by state   
 df_filtered, state_message, zoom = state_filter(df_filtered, state_option, all_msg)
+
+ingrid_photo = 'https://media-exp1.licdn.com/dms/image/C4D03AQH_InG-xiedOA/profile-displayphoto-shrink_800_800/0/1615148707112?e=1642636800&v=beta&t=KVBHsx89CGR_PJGGob87UdRSJD9hsJQbtulcajoIGeg'
+_,col1,col2, _ = st.sidebar.columns(4)
+col1.image(ingrid_photo)
+url='https://www.linkedin.com/in/ingrid-knochenhauer/'
+col1.markdown("[Ingrid](url)")
+
+nickolas_photo = 'https://media-exp1.licdn.com/dms/image/C4E03AQEUkRjeGzF2NA/profile-displayphoto-shrink_400_400/0/1537832523370?e=1642636800&v=beta&t=MbtUAuZtNLDPIVSKrVJ_2MzCq9aAfN56-9pChivl7Uw'
+col2.image(nickolas_photo)
+url='https://www.linkedin.com/in/nickolas-s-mendes/'
+col2.markdown("[Nickolas](url)")
     
 #dataframe grouped by state and activity chosen in the filter
 df_filtered = df_filtered.groupby(['uf','porte']).sum()[['cnpj_basico']].reset_index()
