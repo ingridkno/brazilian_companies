@@ -154,7 +154,7 @@ col1.image(ingrid_photo)
 url='https://www.linkedin.com/in/ingrid-knochenhauer/'
 col1.markdown("[Ingrid](url)")
 
-nickolas_photo = 'https://media-exp1.licdn.com/dms/image/C4E03AQEUkRjeGzF2NA/profile-displayphoto-shrink_400_400/0/1537832523370?e=1642636800&v=beta&t=MbtUAuZtNLDPIVSKrVJ_2MzCq9aAfN56-9pChivl7Uw'
+nickolas_photo = 'https://media-exp1.licdn.com/dms/image/C4D03AQE7jC72ouPqxw/profile-displayphoto-shrink_400_400/0/1637540142042?e=1643241600&v=beta&t=2HcqcUCQZgrLK08YU4-HTpQb6BQOnqTt4gkZJ2bIPxk'
 col2.image(nickolas_photo)
 url='https://www.linkedin.com/in/nickolas-s-mendes/'
 col2.markdown("[Nickolas](url)")
